@@ -149,3 +149,160 @@ header .search-bar-container label:hover{
   color:var(--orange);
 }
 /* Heading section ends */
+
+/* Login-form starts */
+.login-form-container{
+    position: fixed;
+    top:-120%; left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width:100%;
+    background:rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-form-container.active{
+    top:0;
+  }
+  
+  .login-form-container form{
+    margin:2rem;
+    padding:1.5rem 2rem;
+    border-radius: .5rem;
+    background:#fff;
+    width:50rem;
+  }
+  
+  .login-form-container form h3{
+    font-size: 3rem;
+    color:#444;
+    text-transform: uppercase;
+    text-align: center;
+    padding:1rem 0;
+  }
+  
+  .login-form-container form .box{
+    width:100%;
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    margin:.6rem 0;
+    border:.1rem solid rgba(0,0,0,.3);
+    text-transform: none;
+  }
+  
+  .login-form-container form .box:focus{
+    border-color: var(--orange);;
+  }
+  
+  .login-form-container form #remember{
+    margin:2rem 0;
+  }
+  
+  .login-form-container form label{
+    font-size: 1.5rem;
+  }
+  
+  .login-form-container form .btn{
+    display: block;
+    width:100%;
+  }
+  
+  .login-form-container form p{
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:#666;
+  }
+  
+  .login-form-container form p a{
+    color:var(--orange);
+  }
+  
+  .login-form-container form p a:hover{
+    color:#333;
+    text-decoration: underline;
+  }
+  
+  .login-form-container #form-close{
+    position: absolute;
+    top:2rem; right:3rem;
+    font-size: 5rem;
+    color:#fff;
+    cursor: pointer;
+  }
+  
+  
+  #menu-bar{
+      color:#fff;
+      border:.1rem solid #fff;
+      border-radius: .5rem;
+      font-size: 3rem;
+      padding:.5rem 1.2rem;
+      cursor: pointer;
+      display: none;
+    }
+    
+    /* Login-form ends */
+
+
+    /* HOME section starts */
+  .home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .home .content{
+    text-align: center;
+  }
+  
+  .home .content h3{
+    font-size: 4.5rem;
+    color:rgb(20, 4, 4);
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+  }
+  
+  .home .content p{
+    font-size: 2.5rem;
+    color:rgb(2, 0, 0);
+    padding:.5rem 0;
+  }
+  
+  .home .photo-container img{
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+  }
+  
+  .home .controls{
+    padding:1rem;
+    border-radius: 5rem;
+    background:rgba(0,0,0,.7);
+    position: relative;
+    top:10rem;
+  }
+  
+  .home .controls .photo-btn{
+    height:2rem;
+    width:2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background:#fff;
+    cursor: pointer;
+    margin:0 .5rem;
+  }
+  
+  .home .controls .photo-btn.active{
+    background:var(--orange);
+  }
+    /* HOME section ends */
